@@ -1,4 +1,4 @@
-## Confiración  ambiente en python
+## Configuración  ambiente en python
 
 
 Para trabajar bien en python hay que generar un ambiente de desarrollo donde se instalaran las dependencias especificas para el proyecto.
