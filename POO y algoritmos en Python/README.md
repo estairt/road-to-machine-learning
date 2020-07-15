@@ -9,7 +9,7 @@ Para trabajar bien en python hay que generar un ambiente de desarrollo donde se 
 
 
 - Luego creamos nuestro ambiente
-    >``python3.7 venv "nombre_ambiente"``
+    >``python3.7 -m venv "nombre_ambiente"``
 
 - Activamos nuestro ambiente
     >``source env/bin/activate``
