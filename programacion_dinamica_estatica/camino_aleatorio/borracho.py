@@ -14,5 +14,13 @@ class BorrachoTradicional(Borracho):
 
     def camina(self):
         return random.choice([(0,1),(0,-1),(1,0),(-1,0)])
+
+class BorrachoSaltarin(Borracho):
+
+    def __init__(self,nombre):
+        super().__init__(nombre)
+
+    def camina(self):
+        return random.choice([(0,3),(0,-10),(7,0),(-3,0)])
     
         

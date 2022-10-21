@@ -15,6 +15,6 @@ class Campo():
 
             self.coordenadas_de_borrachos[borracho] = nueva_cordenada
 
-    def obtner_coordenada(self,borracho):
+    def obtener_coordenada(self,borracho):
             return self.coordenadas_de_borrachos[borracho]
 
