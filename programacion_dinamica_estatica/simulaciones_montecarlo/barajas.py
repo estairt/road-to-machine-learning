@@ -1,21 +1,24 @@
 import random
 import collections
 
-PALOS = ['espada','corazon','rombo','trebol']
-VALORES = ['as','2','3','4','5','6','7','8','9','10','jota','reina','rey']
+PALOS = ['espada', 'corazon', 'rombo', 'trebol']
+VALORES = ['as', '2', '3', '4', '5', '6', '7',
+           '8', '9', '10', 'jota', 'reina', 'rey']
 
-VALORES_ALFABETICOS ={'as':1,'jota':11,'reina':12,'rey':13}
+VALORES_ALFABETICOS = {'as': 1, 'jota': 11, 'reina': 12, 'rey': 13}
 
-def  crear_baraja():
+
+def crear_baraja():
     barajas = []
     for palo in PALOS:
         for valor in VALORES:
-            barajas.append((palo,valor))
+            barajas.append((palo, valor))
 
     return barajas
 
+
 def obtener_mano(barajas, tamano_mano):
-    mano = random.sample(barajas,tamano_mano)
+    mano = random.sample(barajas, tamano_mano)
 
     return mano
 
@@ -35,8 +38,8 @@ def escaleras(manos):
         for carta in mano:
             if carta[0] != palo:
                 mismo_palo = False
-            
-            for value,key in VALORES_ALFABETICOS.items():
+
+            for value, key in VALORES_ALFABETICOS.items():
                 if carta[1] == key:
                     carta[1] == value
                     break
@@ -44,20 +47,9 @@ def escaleras(manos):
 
         valores.sort()
 
-        for val,key in valores:
-            if (val+1)  != valores[key+1]:
+        for val, key in valores:
+            if (val+1) != valores[key+1]:
                 escalera = False
-
-        
-            
-                
-
-        
-
-        
-
-
-
 
 
 def main(tamano_mano, intentos):
@@ -66,7 +58,7 @@ def main(tamano_mano, intentos):
     manos = []
 
     for _ in range(intentos):
-        mano = obtener_mano(barajas,tamano_mano)
+        mano = obtener_mano(barajas, tamano_mano)
         manos.append(mano)
 
     pares = 0
@@ -74,7 +66,7 @@ def main(tamano_mano, intentos):
         valores = []
         for carta in mano:
             valores.append(carta[1])
-        
+
         counter = dict(collections.Counter(valores))
 
         print(counter)
@@ -86,11 +78,10 @@ def main(tamano_mano, intentos):
     probabilidad_par = pares / intentos
 
     #print(f'La probabilidad de obtener un par en una mano de {tamano_mano} barajas es {probabilidad_par}')
-        
 
 
 if __name__ == "__main__":
     tamano_mano = int(input('De cuantas barajas sera la mano : '))
     intentos = int(input('Cuantos intentos para calcular la probabilidad : '))
 
-    main(tamano_mano,intentos)
+    main(tamano_mano, intentos)
