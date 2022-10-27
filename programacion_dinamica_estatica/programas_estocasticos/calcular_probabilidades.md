@@ -32,7 +32,7 @@ Las probabilidades se calculan en los rangos de 0 a 1.
 
 ### Regla empírica
 
-- Tambien conocida como regla 68-95-99.7
+- Tambien conocida como regla 68-95-99.7(1 sigma=1,2 sigmas=1,96, 3 sigmas=3 para su uso númerico)
 - Señala cuál es la dispersión de los datos en una distribución normal a uno, dos y tres sigmas(desviación estándar).
 - Permite calcular probabilidades con la densidad de la distribución normal
 
