@@ -74,10 +74,12 @@ def escaleras(manos, intentos):
 
         if es_escalera:
             escalera += 1
-        if es_mismo_palo and es_escalera:
-            escalera_color += 1
         if es_mismo_palo and es_escalera and es_real:
             escalera_real += 1
+        elif es_mismo_palo and es_escalera:
+            escalera_color += 1
+        elif es_mismo_palo:
+            
 
     print(f'contador escalera {escalera}')
     print(f'contador escalera color  {escalera_color}')

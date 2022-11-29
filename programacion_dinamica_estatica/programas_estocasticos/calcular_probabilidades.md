@@ -37,3 +37,13 @@ Las probabilidades se calculan en los rangos de 0 a 1.
 - Permite calcular probabilidades con la densidad de la distribución normal
 
 
+
+### Muestreo
+
+- Hay ocaciones en la que no tenemos acceso a toda la población que queremos explorar
+- Uno de los grandes descubrimientos de la estadística es que las muestras aleatorias tienden a mostrar las mismas propiedades de la poblacion objetivo
+- El tipo de muestreo que hemos hecho hasta ahora es muestreo probabilístico
+- En un **muestreo aleatorio** cualquier miembro de la poblacón tiene la **misma probabilidad** de ser escogido.
+- El muestreo aleatorio se debe utilizar cuando mi población tiene caracteristicas similares.
+- En un **muestreo estratificado** tomamos en consideración las caracteristicas de la población para **partirla en subgrupos** y luego tomamos **muestras de cada subgrupo**
+    - **Incrementa la probabilidad** de que el muestreo **sea representativo** de la población
